@@ -12,3 +12,9 @@ def load_file(filename):
         for line in lines:
             linestrip.append(line.strip())
     return linestrip
+
+def update_string(string1, string2, indexnum):
+    #indexnum = int(indexnum)
+    newstring = string1[0:indexnum] + string2 + string1[(indexnum+1):]
+    return newstring
+    
