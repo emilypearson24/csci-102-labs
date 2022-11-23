@@ -26,4 +26,15 @@ def find_word_count(linestrip, word):
         wordcount += i.count(word)
     return wordcount
 
-
+def score_finder(players,scores,name):
+    newplayers = []
+    for i in players:
+        newplayers.append(i.lower())
+    try:
+        nameindex = newplayers.index(name.lower())
+        print(f"OUTPUT {name} got a score of {scores[nameindex]}")
+        
+    except:
+        print("OUTPUT player not found")
+    
+    
