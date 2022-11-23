@@ -1,7 +1,7 @@
 #Emily Pearson
 #CSCI 102 - Section F
 #week 12
-#resources:
+#resources: https://www.w3schools.com/python/ref_list_count.asp , 
 #time:
 
 
@@ -17,4 +17,13 @@ def update_string(string1, string2, indexnum):
     #indexnum = int(indexnum)
     newstring = string1[0:indexnum] + string2 + string1[(indexnum+1):]
     return newstring
-    
+
+def find_word_count(linestrip, word):
+    print(linestrip)
+    word = word.strip()
+    wordcount = 0
+    for i in linestrip:
+        wordcount += i.count(word)
+    return wordcount
+
+
